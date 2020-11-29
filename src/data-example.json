@@ -1,0 +1,108 @@
+{
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/fTDzKoQIh1HeyjfpG5AHMi2jxAJ.jpg",
+            "popularity": 1400.086,
+            "genre_ids": [
+                28,
+                35
+            ],
+            "title": "Chick Fight",
+            "original_language": "en",
+            "original_title": "Chick Fight",
+            "poster_path": "/4ZocdxnOO6q2UbdKye2wgofLFhB.jpg",
+            "overview": "When Anna Wyncomb is introduced to an an underground, all-female fight club in order to turn the mess of her life around, she discovers she is much more personally connected to the history of the club than she could ever imagine.",
+            "video": false,
+            "vote_average": 7.1,
+            "id": 682377,
+            "vote_count": 12,
+            "release_date": "2020-11-13"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/86L8wqGMDbwURPni2t7FQ0nDjsH.jpg",
+            "popularity": 1051.376,
+            "genre_ids": [
+                28,
+                53
+            ],
+            "title": "Hard Kill",
+            "original_language": "en",
+            "original_title": "Hard Kill",
+            "poster_path": "/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg",
+            "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.",
+            "video": false,
+            "vote_average": 4.9,
+            "id": 724989,
+            "vote_count": 178,
+            "release_date": "2020-10-23"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg",
+            "popularity": 837.997,
+            "genre_ids": [
+                14,
+                10751,
+                12,
+                35,
+                27
+            ],
+            "title": "Roald Dahl's The Witches",
+            "original_language": "en",
+            "original_title": "Roald Dahl's The Witches",
+            "poster_path": "/betExZlgK0l7CZ9CsCBVcwO1OjL.jpg",
+            "overview": "In late 1967, a young orphaned boy goes to live with his loving grandma in the rural Alabama town of Demopolis. As the boy and his grandmother encounter some deceptively glamorous but thoroughly diabolical witches, she wisely whisks him away to a seaside resort. Regrettably, they arrive at precisely the same time that the world's Grand High Witch has gathered.",
+            "video": false,
+            "vote_average": 6.9,
+            "id": 531219,
+            "vote_count": 795,
+            "release_date": "2020-10-26"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wu1uilmhM4TdluKi2ytfz8gidHf.jpg",
+            "popularity": 824.295,
+            "genre_ids": [
+                16,
+                14,
+                12,
+                35,
+                10751
+            ],
+            "title": "The SpongeBob Movie: Sponge on the Run",
+            "original_language": "en",
+            "original_title": "The SpongeBob Movie: Sponge on the Run",
+            "poster_path": "/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg",
+            "vote_count": 1546,
+            "video": false,
+            "vote_average": 8,
+            "id": 400160,
+            "overview": "When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.",
+            "release_date": "2020-08-14"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2Fk3AB8E9dYIBc2ywJkxk8BTyhc.jpg",
+            "popularity": 810.626,
+            "genre_ids": [
+                28,
+                53
+            ],
+            "title": "Greenland",
+            "original_language": "en",
+            "original_title": "Greenland",
+            "poster_path": "/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg",
+            "overview": "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garrity's experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
+            "video": false,
+            "vote_average": 7.2,
+            "id": 524047,
+            "vote_count": 672,
+            "release_date": "2020-07-29"
+        }
+    ],
+    "total_results": 10000,
+    "page": 1,
+    "total_pages": 500
+}

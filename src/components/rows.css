@@ -1,32 +1,38 @@
-
-
 .rows {
-    width: 100%;
-    margin-left: -20px;
-    padding: 20px;
-    display: flex;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    scrollbar-width: none;
+  width: 100%;
+  margin-left: -20px;
+  padding: 20px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .rows::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .row {
-    width: 100%;
-    margin-right: 10px;
+  width: 100%;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
-.row img {
-    object-fit: contain;
-    width: auto;
-    max-height: 200px;
-    transition: transform 450ms;
+.row .row__poster {
+  object-fit: contain;
+  width: auto;
+  max-height: 100px;
+  transition: transform 450ms;
 }
 
-.row img:hover {
-    transform: scale(1.08);
+.row .row__poster:hover {
+  transform: scale(1.08);
 }
 
+.row .row__posterLarge {
+  max-height: 250px;
+}
+
+.row .row__posterLarge:hover {
+  transform: scale(1.09);
+}

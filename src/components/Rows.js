@@ -3,7 +3,7 @@ import axios from '../axios'
 import './rows.css'
 import GetRating from './GetRating'
 
-function Rows({ title, fetchUrl, noAverage }) {
+function Rows({ title, fetchUrl, average }) {
 
     const [movies, setMovies] = useState([])
 
@@ -29,9 +29,11 @@ function Rows({ title, fetchUrl, noAverage }) {
             <div className="rows">
                 {movies.map((movie, index) => (
                     <div key={index} className="row">
-                        <img src={`${baseUrlPoster}${movie.poster_path}`} alt={movie.name} />
-                        <span>{noAverage ? "" : movie.vote_average}</span>
-                        <GetRating rating={movie.vote_average} />
+                        <img
+                        className={`row__poster ${average && "row__posterLarge"}`}
+                        src={ average ? `${baseUrlPoster}${movie.poster_path}` : `${baseUrlPoster}${movie.backdrop_path}`}
+                        alt={movie.name} />
+                        {average ? <GetRating rating={movie.vote_average} /> : "" }
                     </div>
                 ))}
             </div>

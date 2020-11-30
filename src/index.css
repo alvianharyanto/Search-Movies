@@ -1,20 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap");
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    --bg: hsl(230, 17%, 14%);
-    --cardBg: hsl(228, 28%, 20%);
-    --primaryText: hsl(0, 0%, 100%);
-    --topBgPattern: hsl(232, 19%, 15%);
-    --secondaryText: hsl(228, 34%, 66%);
-    --rating: hsl(61, 84%, 40%);
+  --bg: hsl(230, 17%, 14%);
+  --cardBg: hsl(228, 28%, 20%);
+  --primaryText: hsl(0, 0%, 100%);
+  --topBgPattern: hsl(232, 19%, 15%);
+  --secondaryText: hsl(228, 34%, 66%);
+  --rating: hsl(46, 78%, 55%);
+  --accentColor: hsl(0, 83%, 42%);
 }
-
 
 body {
   width: 100vw;
@@ -24,18 +27,19 @@ body {
   line-height: 1.5;
   background: var(--bg);
   color: var(--secondaryText);
-  font-family: 'Inter', sans-serif;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 @media screen and (min-width: 850px) {
   body {
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
 }
 
 h1,
 h2,
 h3 {
+  font-family: "Tajawal", sans-serif;
   font-size: 1.3rem;
   color: var(--primaryText);
 }
@@ -48,22 +52,34 @@ h3 {
 
 @media screen and (min-width: 1227px) {
   .container {
-      max-width: 70.5rem !important;
+    max-width: 70.5rem !important;
   }
 }
 
 @media screen and (min-width: 850px) {
   .container {
-      max-width: 50.5rem;
+    max-width: 50.5rem;
   }
 }
 
 .header {
   padding: 20px;
   text-align: center;
-  border-bottom: .9px solid var(--cardBg);
+  border-bottom: 0.9px solid var(--cardBg);
+  text-transform: uppercase;
+}
+
+.header__title::before {
+  content: "";
+  background: var(--accentColor);
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 3px;
+  transform: translateX(15px) translateY(50px);
 }
 
 .main {
   margin: 20px auto;
+  margin-top: 500px;
 }

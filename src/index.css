@@ -13,7 +13,7 @@ html {
   --bg: hsl(230, 17%, 14%);
   --cardBg: hsl(228, 28%, 20%);
   --primaryText: hsl(0, 0%, 100%);
-  --topBgPattern: hsl(232, 19%, 15%);
+  --secondaryBg: hsl(231, 19%, 7%);
   --secondaryText: hsl(228, 34%, 66%);
   --rating: hsl(46, 78%, 55%);
   --accentColor: hsl(0, 83%, 42%);
@@ -42,6 +42,28 @@ h3 {
   font-family: "Tajawal", sans-serif;
   font-size: 1.3rem;
   color: var(--primaryText);
+}
+
+a {
+  color: var(--accentColor);
+  font-weight: bold;
+  text-decoration: dotted;
+}
+
+button {
+  background: var(--accentColor);
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: bold;
+  color: var(--primaryText);
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+button * {
+  margin: auto 0.9em auto 0;
 }
 
 .container {

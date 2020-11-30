@@ -50,22 +50,6 @@
   color: var(--rating);
 }
 
-.banner__button {
-  background: var(--accentColor);
-  height: 35px;
-  width: 150px;
-  border: none;
-  border-radius: 0.2em;
-  font-weight: bold;
-  color: var(--primaryText);
-  margin-top: 0.5em;
-  cursor: pointer;
-}
-
-.banner__button * {
-  margin: auto 0.9em auto 0;
-}
-
 @media screen and (min-width: 850px) {
   .banner {
     padding: 0 7.5rem 2rem;

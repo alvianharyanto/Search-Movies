@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# Search Movies Webpage
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## App Desc
 
 Search your favorite movies, and see the detail of your favorite movies.
 

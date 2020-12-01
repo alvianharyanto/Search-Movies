@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import './banner.css'
 import axios from '../axios'
 import requests from '../requests'
-import './banner.css'
 import GetRating from './GetRating'
+import React, { useState, useEffect } from 'react';
 import { faStar, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function Banner() {
-
+    // start get api
     const [movie, setMovie] = useState([])
 
     useEffect(() => {
@@ -36,6 +36,7 @@ function Banner() {
 
     return (
         <div className="banner"
+            // background image from api
             style={{
                 backgroundImage: `linear-gradient(0deg,
                                     rgba(2,0,36,1) 0%,
@@ -46,6 +47,7 @@ function Banner() {
         >
             <div className="container">
                 <h2 className="banner__title">
+                    {/* get title or name or original name from api */}
                     {movie?.title || movie?.name || movie?.original_name}
                 </h2>
 

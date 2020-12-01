@@ -11,7 +11,12 @@
   margin: auto 10px auto 0;
 }
 
-.rating__value span {
+.rating__value .rating__value--bolder {
+  color: var(--rating);
+  font-weight: bold;
+}
+
+.rating__value .rating__value--light {
   font-size: 0.8rem;
 }
 

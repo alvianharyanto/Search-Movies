@@ -1,7 +1,7 @@
-import React from 'react'
 import './footer.css'
-import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
     return (

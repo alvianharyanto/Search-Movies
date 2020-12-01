@@ -1,3 +1,4 @@
+// category movies
 const getCategory = [
         {
             id : 28,

@@ -1,22 +1,23 @@
-import React, {useState} from 'react'
 import './search.css'
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Search() {
 
-    const [search, setSearch] = useState()
+    const [search, setSearch] = useState(``)
 
     const getSearch = (e) => {
         setSearch(e.target.value)
     }
 
-    console.log(search)
-
     return (
         <div className="search">
-            <input type="text" placeholder="Search Movie" value={search} onChange={getSearch}></input>
-            <button><FontAwesomeIcon className="icon" icon={ faSearch } /></button>
+            <input type="text" placeholder="Search Movie" value={search} onChange={getSearch} search={search}></input>
+            <Link to={`/search/${search}`}>
+                <button><FontAwesomeIcon className="icon" icon={ faSearch } /></button>
+            </Link>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import './category.css'
 import Rows from './Rows'
 import requests from '../requests'
+import React, {useState} from 'react'
 import getCategory from '../getCategory'
-import './category.css'
 
 function Category() {
 
@@ -18,7 +18,7 @@ function Category() {
             <div className="genre">
                 {getCategory.map((genre) => (
                     <button key={genre.id}
-                            className={`genre__button ${genre.id == genres ? "active": ""}`} // toggle class active if genre.id = genre
+                            className={`genre__button ${genre.id === genres ? "active": ""}`} // toggle class active if genre.id = genre
                             value={genre.id} onClick={handleClick} >
                             {genre.name}
                     </button>

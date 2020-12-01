@@ -6,16 +6,14 @@ import Category from '../components/Category'
 
 function Home() {
     return (
-        <>
-            <main className="main">
-                <Banner />
-                <div className="main__content">
-                    <Rows title="Trending Now" fetchUrl={requests.trendingMovies} average/> {/* get tranding */}
-                    <Rows title="Upcoming Movies" fetchUrl={requests.upcomingMovies} /> {/* get upcoming */}
-                    <Category />
-                </div>
-            </main>
-        </>
+        <main className="main">
+            <Banner />
+            <div className="main__content">
+                <Rows title="Trending Now" fetchUrl={requests.trendingMovies} average/> {/* get tranding */}
+                <Rows title="Upcoming Movies" fetchUrl={requests.upcomingMovies} /> {/* get upcoming */}
+                <Category />
+            </div>
+        </main>
     )
 }
 

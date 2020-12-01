@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import axios from '../axios'
 import './rows.css'
+import axios from '../axios'
 import GetRating from './GetRating'
+import React, { useState, useEffect } from 'react';
 
 function Rows({ title, fetchUrl, average }) {
-
+    // start get api
     const [movies, setMovies] = useState([])
 
     useEffect(() => {
@@ -18,19 +18,21 @@ function Rows({ title, fetchUrl, average }) {
             return getMovies;
         }
         getMovies();
-    }, [fetchUrl]);
+    }, [fetchUrl]); // wait fetchUrl from other component
 
     //base url for poster
     const baseUrlPoster = "https://image.tmdb.org/t/p/original"
 
     return (
         <>
-            {(title) != "" ? <h3>{(title)}</h3> : ""}
+            {(title) !== "" ? <h3>{(title)}</h3> : ""}
             <div className="rows">
+                {/* loop  */}
                 {movies.map((movie, index) => (
                     <div key={index} className="row">
                         <img
                         className={`row__poster ${average && "row__posterLarge"}`}
+                        // if average get movie poster, else get backdrop
                         src={
                             average ? `${baseUrlPoster}${movie.poster_path}`
                             : `${baseUrlPoster}${movie.backdrop_path}`

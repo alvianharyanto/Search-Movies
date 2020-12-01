@@ -3,13 +3,12 @@
 .rating {
   display: flex;
   width: 100%;
-  justify-content: space-between;
   height: 35px;
 }
 
 .rating__value,
 .stars-outer {
-  margin: auto 0;
+  margin: auto 10px auto 0;
 }
 
 .rating__value span {
@@ -36,7 +35,7 @@
   content: "\f005  \f005  \f005  \f005  \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--secondaryText);
 }
 

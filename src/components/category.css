@@ -1,0 +1,18 @@
+.genre {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.genre__button {
+  background: var(--cardBg);
+  margin-right: 1em;
+  padding: 0 1em;
+  width: 100px;
+}
+
+.active {
+  background: var(--accentColor);
+}

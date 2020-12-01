@@ -44,20 +44,23 @@ function Banner() {
                                     url("${baseUrlPoster}${movie?.backdrop_path}")`
             }}
         >
-            <h2 className="banner__title">
-                {movie?.title || movie?.name || movie?.original_name}
-            </h2>
-            <div className="banner__detail">
-                <span>{movie?.release_date}</span>
-                <div className="rating-wrapper">
-                    <FontAwesomeIcon className="icon" icon={ faStar } />
-                    <GetRating rating={movie?.vote_average} banner/></div>
-                <p className="overview">{movie?.overview}</p>
-            </div>
-                <button className="banner__button">
-                    <FontAwesomeIcon className="icon" icon={ faPlay } />
-                    Watch Trailer
-                </button>
+            <div className="container">
+                <h2 className="banner__title">
+                    {movie?.title || movie?.name || movie?.original_name}
+                </h2>
+
+                <div className="banner__detail">
+                    <span>{movie?.release_date}</span>
+                    <div className="rating-wrapper">
+                        <FontAwesomeIcon className="icon" icon={ faStar } />
+                        <GetRating rating={movie?.vote_average} banner/></div>
+                    <p className="overview">{movie?.overview}</p>
+                </div>
+                    <button className="banner__button">
+                        <FontAwesomeIcon className="icon" icon={ faPlay } />
+                        Watch Trailer
+                    </button>
+                </div>
         </div>
     );
 }

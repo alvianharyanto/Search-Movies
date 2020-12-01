@@ -1,0 +1,25 @@
+.search input {
+  border: 0;
+  width: 10rem;
+  height: 35px;
+  padding: 0 1em;
+  color: var(--secondaryText);
+  background: var(--secondaryBg);
+  transition: all 450ms;
+}
+
+.search input:focus {
+  width: 15rem;
+  background: var(--cardBg);
+  color: var(--primaryText);
+}
+
+.search button {
+  width: auto;
+  margin: auto;
+  padding: 0 1.5em;
+}
+
+.search button * {
+  margin: auto;
+}

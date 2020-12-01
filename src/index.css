@@ -11,7 +11,7 @@
 
 html {
   --bg: hsl(230, 17%, 14%);
-  --cardBg: hsl(228, 28%, 20%);
+  --cardBg: hsla(231, 19%, 7%, 0.8);
   --primaryText: hsl(0, 0%, 100%);
   --secondaryBg: hsl(231, 19%, 7%);
   --secondaryText: hsl(228, 34%, 66%);
@@ -69,7 +69,7 @@ button * {
 .container {
   margin: auto;
   max-width: 25rem;
-  width: calc(100% - 3rem);
+  width: calc(100vw - 3rem);
 }
 
 @media screen and (min-width: 1227px) {
@@ -89,6 +89,8 @@ button * {
   text-align: center;
   border-bottom: 0.9px solid var(--cardBg);
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__title::before {
@@ -103,5 +105,8 @@ button * {
 
 .main {
   margin: 20px auto;
+}
+
+.main__content {
   margin-top: 500px;
 }

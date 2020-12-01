@@ -14,8 +14,20 @@
 
 .row {
   width: 100%;
+  height: max-content;
   margin-right: 20px;
   cursor: pointer;
+  position: relative;
+}
+
+.row .row__title {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  background: var(--cardBg);
+  padding: 0.3em;
+  color: var(--primaryText);
+  transition: transform 450ms;
 }
 
 .row .row__poster {
@@ -25,8 +37,22 @@
   transition: transform 450ms;
 }
 
-.row .row__poster:hover {
-  transform: scale(1.08);
+.row .row__poster:hover > .row::before {
+  width: 100%;
+  height: 100%;
+}
+
+.row::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(2, 0, 36) 0%,
+    rgba(157, 11, 11, 0.2) 50%,
+    rgba(235, 130, 66, 0.15) 100%
+  );
+  position: absolute;
 }
 
 .row .row__posterLarge {

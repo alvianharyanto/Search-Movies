@@ -34,7 +34,7 @@ function Footer() {
             <div className="copy">
                 <h3>Movies</h3>
                 <span>tmdb</span>
-                <div className="copy__right">&#169; copyright 2020. all reseved
+                <div className="copy__right">&#169; copyright 2020.
                 <div>
                     Made with<FontAwesomeIcon className="icon" icon={ faHeart } />&<FontAwesomeIcon className="icon" icon={ faCoffee } />
                     code by <a href="http://alvianharyanto.com" target="_blank" rel="noreferrer">Alvian Haryanto</a></div>

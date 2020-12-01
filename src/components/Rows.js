@@ -24,20 +24,26 @@ function Rows({ title, fetchUrl, average }) {
     const baseUrlPoster = "https://image.tmdb.org/t/p/original"
 
     return (
-        <div className="rows-wrapper">
-            <h3>{(title)}</h3>
+        <>
+            {(title) != "" ? <h3>{(title)}</h3> : ""}
             <div className="rows">
                 {movies.map((movie, index) => (
                     <div key={index} className="row">
                         <img
                         className={`row__poster ${average && "row__posterLarge"}`}
-                        src={ average ? `${baseUrlPoster}${movie.poster_path}` : `${baseUrlPoster}${movie.backdrop_path}`}
-                        alt={movie.name} />
-                        {average ? <GetRating rating={movie.vote_average} /> : "" }
+                        src={
+                            average ? `${baseUrlPoster}${movie.poster_path}`
+                            : `${baseUrlPoster}${movie.backdrop_path}`
+                        }
+                        alt={movie.title} />
+                        {
+                        average ? <GetRating rating={movie.vote_average} />
+                        : <span className="row__title">{movie?.title || movie?.name || movie?.original_name}</span>
+                        }
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     );
 }
 

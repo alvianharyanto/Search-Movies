@@ -5,11 +5,9 @@
   height: 480px;
   padding: 0 0 1.5rem 2rem;
   font-size: 1.1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: absolute;
   left: 0;
+  top: 75px;
 }
 
 /* @media screen and (min-width: 1227px) {
@@ -17,6 +15,12 @@
     padding: 0 7.5rem 2rem;
   }
 } */
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
 
 .banner__title {
   font-size: 3rem;

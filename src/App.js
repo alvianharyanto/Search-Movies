@@ -1,10 +1,11 @@
 import React from 'react';
 import Home from './views/Home'
+import { Link } from 'react-router-dom'
 import Search from './components/Search'
 import Footer from './components/Footer'
+import MoviePage from './views/MoviePage'
 import SearchPage from './views/SearchPage'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             <Search />
           </header>
           <Switch>
+            <Route path="/movie/:id/:title">
+              <MoviePage />
+            </Route>
             <Route path="/search/:searchTerm">
               <SearchPage />
             </Route>

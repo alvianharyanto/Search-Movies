@@ -107,6 +107,7 @@ button * {
   margin: 20px auto;
 }
 
-.main__content {
+.main__content,
+.movie__about {
   margin-top: 500px;
 }

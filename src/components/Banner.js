@@ -39,7 +39,7 @@ function Banner() {
             // background image from api
             style={{
                 backgroundImage: `linear-gradient(0deg,
-                                    rgba(2,0,36,1) 0%,
+                                    var(--bg) 0%,
                                     rgba(157,11,11,0.2) 50%,
                                     rgba(235,130,66,0.15) 100%),
                                     url("${baseUrlPoster}${movie?.backdrop_path}")`

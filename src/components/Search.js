@@ -14,7 +14,7 @@ function Search() {
 
     return (
         <div className="search">
-            <input type="text" placeholder="Search Movie" value={search} onChange={getSearch} search={search}></input>
+            <input type="text" placeholder="Search Movie" value={search} onChange={getSearch} search={search} required></input>
             <Link to={`/search/${search}`}>
                 <button><FontAwesomeIcon className="icon" icon={ faSearch } /></button>
             </Link>

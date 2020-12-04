@@ -1,8 +1,9 @@
-.banner {
+.banner,
+.movie__banner {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  height: 480px;
+  height: 500px;
   padding: 0 0 1.5rem 2rem;
   font-size: 1.1em;
   position: absolute;
@@ -15,14 +16,16 @@
     padding: 0 7.5rem 2rem;
   }
 } */
-.banner .container {
+.banner .container,
+.movie .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
 }
 
-.banner__title {
+.banner__title,
+.movie__detail--title {
   font-size: 3rem;
   width: 80%;
   margin: 0;
@@ -59,7 +62,8 @@
     padding: 0 7.5rem 2rem;
   }
 
-  .banner__title {
+  .banner__title,
+  .movie__detail--title {
     width: 40%;
     margin: 0 -4px;
   }
@@ -68,7 +72,8 @@
     display: block;
   }
 
-  .banner__button {
+  .banner__button,
+  .movie__detail--trailer {
     margin-top: 1.5em;
   }
 }

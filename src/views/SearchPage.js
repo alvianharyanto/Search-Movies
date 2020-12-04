@@ -9,7 +9,8 @@ function Home() {
     // console.log(search.searchTerm)
     return (
         <main className="main">
-            <Rows title="Search Movie" fetchUrl={`${requests.searchMovies}${search.searchTerm}`} average/>
+            <h3>Search Movies : {search.searchTerm}</h3>
+            <Rows fetchUrl={`${requests.searchMovies}${search.searchTerm}`} average/>
             <Category />
         </main>
     )

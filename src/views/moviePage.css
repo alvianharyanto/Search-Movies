@@ -1,0 +1,52 @@
+.movie__banner {
+  z-index: -1;
+}
+
+.movie__detail {
+  color: var(--primaryText);
+  margin-top: 300px;
+}
+
+.movie__detail .rating {
+  justify-content: flex-end;
+}
+
+.movie__detail .rating__value--bolder {
+  font-size: 2.5rem;
+}
+
+.movie__runtime {
+  width: 100px;
+}
+
+.movie__runtime .icon {
+  margin-right: 0.5em;
+  color: var(--rating);
+}
+
+.movie .movie__category {
+  margin: 1em 0;
+}
+
+.movie__category--genre,
+.movie__detail--release {
+  margin-right: 0.5em;
+  background: var(--bg);
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+.movie .wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.movie__detail--release {
+  background: var(--rating);
+  width: 55px;
+  height: 35px;
+  margin: auto 0;
+  text-align: center;
+  color: var(--bg);
+}

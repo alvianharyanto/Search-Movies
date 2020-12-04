@@ -6,6 +6,10 @@
   scrollbar-width: none;
 }
 
+.genre::-webkit-scrollbar {
+  display: none;
+}
+
 .genre__button {
   background: var(--cardBg);
   margin-right: 1em;

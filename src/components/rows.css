@@ -12,6 +12,10 @@
   display: none;
 }
 
+.rows a {
+  color: var(--secondaryText) !important;
+}
+
 .row {
   width: 100%;
   height: max-content;

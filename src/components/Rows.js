@@ -1,6 +1,7 @@
 import './rows.css'
 import axios from '../axios'
 import GetRating from './GetRating'
+import {Link} from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 
 function Rows({ title, fetchUrl, average }) {
@@ -29,20 +30,23 @@ function Rows({ title, fetchUrl, average }) {
             <div className="rows">
                 {/* loop  */}
                 {movies.map((movie, index) => (
-                    <div key={index} className="row">
-                        <img
-                        className={`row__poster ${average && "row__posterLarge"}`}
-                        // if average get movie poster, else get backdrop
-                        src={
-                            average ? `${baseUrlPoster}${movie.poster_path}`
-                            : `${baseUrlPoster}${movie.backdrop_path}`
-                        }
-                        alt={movie.title} />
-                        {
-                        average ? <GetRating rating={movie.vote_average} />
-                        : <span className="row__title">{movie?.title || movie?.name || movie?.original_name}</span>
-                        }
-                    </div>
+                    <Link key={index} to={`/movie/${movie.id}/${movie?.title || movie?.name || movie?.original_name}`}>
+                        <div className="row">
+                            <img
+                                className={`row__poster ${average && "row__posterLarge"}`}
+                                // if average get movie poster, else get backdrop
+                                src={
+                                    average ? `${baseUrlPoster}${movie.poster_path}`
+                                    : `${baseUrlPoster}${movie.backdrop_path}`
+                                }
+                                alt={movie.title}
+                            />
+                            {/* if average get rating*/}
+                            {average ? <GetRating rating={movie.vote_average} />
+                            // else get title or name or original_name
+                            : <span className="row__title">{movie?.title || movie?.name || movie?.original_name}</span>}
+                        </div>
+                    </Link>
                 ))}
             </div>
         </>

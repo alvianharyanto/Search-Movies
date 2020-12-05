@@ -58,14 +58,17 @@ function MoviePage() {
                             </div>
                         </div>
                         <h2 className="movie__detail--title">{movie?.title || movie?.name || movie?.original_name}</h2>
-                        <div className="movie__runtime">
-                            <GetRunTime runtime={movie.runtime} />
+                        <div className="wrapper secondary-wrapper">
+                            <div className="movie__runtime">
+                                <GetRunTime runtime={movie.runtime} />
+                            </div>
+                            <div className="movie__category">
+                                {movie.genres?.map((genre, index) => (
+                                <span className="movie__category--genre" key={index} >{genre.name}</span>
+                                ))}
+                            </div>
                         </div>
-                        <div className="movie__category">
-                            {movie.genres?.map((genre, index) => (
-                            <span className="movie__category--genre" key={index} >{genre.name}</span>
-                            ))}
-                        </div>
+                        <h3>STORYLINE : </h3>
                         <p className="movie__detail--overview">{movie?.overview}</p>
                         <button className="movie__detail--trailer">
                             <FontAwesomeIcon className="icon" icon={ faPlay } />

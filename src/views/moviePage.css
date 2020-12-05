@@ -7,8 +7,14 @@
   margin-top: 300px;
 }
 
+.movie__detail h3 {
+  font-size: 1em;
+  color: var(--secondaryText);
+}
+
 .movie__detail .rating {
   justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .movie__detail .rating__value--bolder {
@@ -25,7 +31,7 @@
 }
 
 .movie .movie__category {
-  margin: 1em 0;
+  width: auto;
 }
 
 .movie__category--genre,
@@ -40,6 +46,12 @@
   display: flex;
   justify-content: space-between;
   height: 70px;
+}
+
+.movie .secondary-wrapper {
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 1em;
 }
 
 .movie__detail--release {

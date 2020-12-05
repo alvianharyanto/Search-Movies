@@ -85,7 +85,7 @@ button * {
 }
 
 .header {
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   border-bottom: 0.9px solid var(--cardBg);
   text-transform: uppercase;

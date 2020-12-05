@@ -9,9 +9,14 @@
 }
 
 .search input:focus {
-  width: 15rem;
   background: var(--cardBg);
   color: var(--primaryText);
+}
+
+@media screen and (min-width: 850px) {
+  .search input:focus {
+    width: 15rem;
+  }
 }
 
 .search button {

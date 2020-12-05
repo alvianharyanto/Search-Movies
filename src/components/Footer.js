@@ -33,7 +33,7 @@ function Footer() {
             </div>
             <div className="copy">
                 <h3>Movies</h3>
-                <span>tmdb</span>
+                <a href="https://www.themoviedb.org/about/logos-attribution" target="_blank" rel="noreferrer">tmdb</a>
                 <div className="copy__right">&#169; copyright 2020.
                 <div>
                     Made with<FontAwesomeIcon className="icon" icon={ faHeart } />&<FontAwesomeIcon className="icon" icon={ faCoffee } />

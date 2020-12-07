@@ -6,7 +6,7 @@ import getCategory from '../getCategory'
 
 function Category() {
 
-    const [genres, setGenres] = useState(28)
+    const [genres, setGenres] = useState('28')
 
     const handleClick = (e) => {
         setGenres(e.target.value)
@@ -18,8 +18,8 @@ function Category() {
             <div className="genre">
                 {getCategory.map((genre) => (
                     <button key={genre.id}
-                            className={`genre__button ${genre.id === genres ? "active": ""}`} // toggle class active if genre.id = genre
-                            value={genre.id} onClick={handleClick} >
+                            className={`genre__button ${ genres !== genre.id ? "" : "active"}`} // toggle class active if genre.id = genre
+                            value={genre.id} onClick={ handleClick } >
                             {genre.name}
                     </button>
                 ))}

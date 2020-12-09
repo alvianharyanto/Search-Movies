@@ -12,6 +12,6 @@ API from [tmdb](https://www.themoviedb.org/documentation/api).
 
 1. Search movies
 2. See movie details
-3. Tranding movies
+3. Trending movies
 4. Upcoming movies
 5. Category movies

@@ -3,6 +3,7 @@ import axios from '../axios'
 import requests from '../requests'
 import GetRating from './GetRating'
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import { faStar, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -58,10 +59,12 @@ function Banner() {
                         <GetRating rating={movie?.vote_average} banner/></div>
                     <p className="overview">{movie?.overview}</p>
                 </div>
-                    <button className="banner__button">
-                        <FontAwesomeIcon className="icon" icon={ faPlay } />
-                        Watch Trailer
-                    </button>
+                    <Link to={{pathname:`https://www.youtube.com/results?search_query=trailer+${movie?.title}`}} target="_blank">
+                        <button className="banner__button">
+                            <FontAwesomeIcon className="icon" icon={ faPlay } />
+                            Watch Trailer
+                        </button>
+                    </Link>
                 </div>
         </div>
     );

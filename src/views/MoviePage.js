@@ -3,6 +3,7 @@ import axios from '../axios'
 import { useParams } from 'react-router-dom';
 import GetRating from '../components/GetRating'
 import GetRunTime from '../components/GetRunTime'
+import {Link} from 'react-router-dom'
 import { React, useEffect, useState }from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlay } from "@fortawesome/free-solid-svg-icons"
@@ -70,10 +71,12 @@ function MoviePage() {
                         </div>
                         <h3>STORYLINE : </h3>
                         <p className="movie__detail--overview">{movie?.overview}</p>
-                        <button className="movie__detail--trailer">
-                            <FontAwesomeIcon className="icon" icon={ faPlay } />
-                            Watch Trailer
-                        </button>
+                        <Link to={{pathname:`https://www.youtube.com/results?search_query=trailer+${movie?.title}`}} target="_blank">
+                            <button className="banner__button">
+                                <FontAwesomeIcon className="icon" icon={ faPlay } />
+                                Watch Trailer
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

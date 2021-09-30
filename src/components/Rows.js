@@ -51,6 +51,7 @@ function Rows({ title, fetchUrl, average }) {
                                 // else get title or name or original_name
                                 : <span className="row__title">{movie?.title || movie?.name || movie?.original_name}</span>}
                             </div>
+
                         </Link>
                     ))}
                 </div>
